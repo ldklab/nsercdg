@@ -1,0 +1,65 @@
+% 12pt font, 8.5x11 page size
+\documentclass[12pt,letterpaper]{article}
+
+% Times font
+\usepackage{times}
+
+% Prevent some characters from messing up your doc
+\usepackage[utf8]{inputenc}
+
+% 0.75in margins
+\usepackage[margin=0.75in]{geometry}
+
+% The commands below cause \section to take the same space as regular
+% text (12pt font, minimal to no additional spacing) Note that NSERC
+% requires all text to be 12pt
+\usepackage{titlesec}
+\titleformat{\section}{\bfseries\uppercase}{\thesection.\quad}{0pt}{}{}
+\titlespacing*\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+% You may want figures...
+\usepackage{graphicx}
+% ...and if you do, you almost certainly you want text to wrap around
+% them
+\usepackage{wrapfig}
+% I prefer figure captions in bold font, works better when you leave
+% minimal spacing between the figure and the text
+\usepackage[font=bf]{caption}
+
+% Oh, and you probably want references to be spaced as tighlty as possible
+\usepackage{natbib}
+\setlength{\bibsep}{0.0pt}
+
+% No page numbers, headers/footers
+\pagestyle{empty}
+
+
+\begin{document}
+
+% Title (also in 12pt font)
+\begin{center}
+\textbf{\underline{Your title here}}
+\end{center}
+
+
+\section{Overview}
+
+\section{Recent Progress}
+
+\section{Objectives}
+
+\section{Literature Review}
+
+\section{Methodology}
+
+\section{Impact}
+
+% Make sure bibliography start on a separate page, as you will need to
+% break it away from the main document (it must be uploaded as
+% separate PDF)
+\clearpage
+\bibliographystyle{plain}
+% Replace "biblio" with your .bib file name
+\bibliography{biblio}
+
+\end{document}
