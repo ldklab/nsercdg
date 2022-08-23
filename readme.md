@@ -7,11 +7,11 @@ This follows NSERC guidelines to the best of my knowledge but I cannot guarantee
 ## Q&A
 
 
-**Q:** This is not good LaTeX. Why didn't you put all formatting commands in a separate class?
+**Q:** This is not good LaTeX. Why didn't you put all formatting commands in a separate class?  
 **A:** Because I am lazy and this gets the job done.
 
-**Q:** Doesn't this make LaTeX look like Word?
+**Q:** Doesn't this make LaTeX look like Word?  
 **A:** It kinda does, although that was not the goal. It may not look the best, but this template keeps everything in 12pt font with nicely tight spacing.
 
-**Q:** `\subsection` does not match the rest of the document. Why?
+**Q:** `\subsection` does not match the rest of the document. Why?  
 **A:** I only redefined formatting for `\section` commands; I don't use `\subsection`, `\subsubsection` and `\paragraph` because too many headings take away precious real estate (you only have five pages after all!). If you plan to use them, you can redefine them similarly to what I did with `\section`.
